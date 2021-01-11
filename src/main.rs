@@ -35,7 +35,7 @@ fn game() {
     }
 }
 
-fn main() {
+fn sample() {
     // game();
     // const
     println!("The value of NUM is :{}", NUM);
@@ -49,4 +49,18 @@ fn main() {
     let x = x + 1;
     let x = x * 2;
     println!("The value of x is: {}", x);
+}
+
+fn main() {
+    let tup = (500, 6.4, 1);
+    let (_, y, _) = tup;
+    println!("The value of y is {}", y);
+    println!("The value of tup.0 is {}", tup.0);
+    println!("The value of tup.1 is {}", tup.1);
+    println!("The value of tup.2 is {}", tup.2);
+
+    let a = [1, 2, 3, 4, 5];
+    let index = rand::thread_rng().gen_range(5, 5);
+    let element = a[index];
+    println!("{}", element);
 }
